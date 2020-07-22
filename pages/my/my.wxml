@@ -1,0 +1,90 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+          <image src="../../images/default.svg" style="width: 50px; height: 50px; display: block" />
+
+        </view>
+        <view class="weui-cell__bd">
+          <view>联系人名称</view>
+          <view style="font-size: 13px;color: #888888;">摘要信息</view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="weui-cells__title"></view>
+
+
+    <view class="weui-cells weui-cells_after-title">
+      <block wx:for="{{list}}" wx:key="id">
+        <view class="weui-cell weui-cell_access" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" id="{{item.id}}" bindtap="kindToggle">
+          <view class="weui-cell__bd">
+            <view style="display: inline-block; vertical-align: middle">{{item.name}}</view>
+            <view class="weui-badge" style="margin-left: 5px;">8</view>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+        <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
+          <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">
+            <block wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
+              <view class="weui-cell weui-cell_access weui-cell_access-height">
+                <mp-slideview buttons="{{item.slideButtons}}" bindbuttontap="slideButtonTap" >
+                  
+                    <view class="weui-cell">
+                      <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                        <image src="../../images/default.svg" style="width: 50px; height: 50px; display: block" />
+
+                      </view>
+                      <view class="weui-cell__bd">
+                        <view>联系人名称</view>
+                        <view style="font-size: 13px;color: #888888;">{{page}}</view>
+                      </view>
+                      <view class="friendEdit">
+                        <view class="friendreject">拒绝</view> <view class="friendagree">同意</view>
+                      </view>
+                    </view>
+                  
+                </mp-slideview>
+              </view>
+            </block>
+          </view>
+        </view>
+
+      </block>
+    </view>
+
+<view class="weui-cells__title"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="../addFriend/addFriend" hover-class="navigator-hover">
+        <view class="weui-cell weui-cell_access" style="background-color: #f7f7f7;">
+          <view class="weui-cell__bd">
+
+            <view style="display: inline-block; vertical-align: middle">添加监督好友</view>
+
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </navigator>
+    </view>
+
+
+    <view class="weui-cells__title"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="../operationGuide/operationGuide" hover-class="navigator-hover">
+        <view class="weui-cell weui-cell_access" style="background-color: #f7f7f7;">
+          <view class="weui-cell__bd">
+
+            <view style="display: inline-block; vertical-align: middle">操作指南</view>
+
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </navigator>
+    </view>
+
+
+
+  </view>
+</view>

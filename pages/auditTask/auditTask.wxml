@@ -1,0 +1,43 @@
+<view class="container task-form">
+
+  <view class="tech-img-frame">
+    <image class="tech-img" src="https://bpb-test.oss-cn-beijing.aliyuncs.com//orange_Img/2019/11/24/496513e614c342c3999daac2757746dd.png" bindtap="onLook"></image>
+  </view>
+  <view class="form-frame">
+    <view class="form-item">
+      <view class="item-title">紧急程度</view>
+      <view class="item-context">{{form.name}}</view>
+    </view>
+    <view class="form-item">
+      <view class="item-title">开始时间</view>
+      <view class="item-context">{{form.workTimeStr}}</view>
+    </view>
+    <view class="form-item">
+      <view class="item-title">结束时间</view>
+      <view class="item-context">{{form.workLevelStr}}</view>
+    </view>
+    <view class="form-item">
+      <view class="item-title">完成得分</view>
+      <view class="item-context">
+        100分
+      </view>
+    </view>
+    <view class="form-item">
+      <view class="item-title">失败扣分</view>
+      <view class="item-context">
+        100分
+      </view>
+    </view>
+    <view class="form-item intro">
+      <view class="item-title" style="line-height:48rpx;">任务内容</view>
+      <view class="item-context">大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔</view>
+    </view>
+  </view>
+  
+</view>
+
+<!--任务完成 任务失败  任务进行中 任务未进行  -->
+  <view class="foot">
+    <button class="contact-btn" open-type="contact">审核失败</button>
+    <button class="pay" hover-class="pay-hover" bindtap="payBill">审核通过</button>
+  </view>

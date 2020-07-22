@@ -1,0 +1,71 @@
+.task-form{
+  padding-bottom: 100rpx;
+}
+.tech-img-frame{
+  background-color: #EDEDED;
+  padding-top: 40rpx;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30rpx;
+}
+.tech-img{
+  width:298rpx;
+  height: 320rpx;
+}
+.form-frame {
+  padding: 0 40rpx 40rpx;
+  background-color: #EDEDED;
+  margin-top: 12rpx;
+}
+.form-item{
+  display: flex;
+  padding-top: 32rpx;
+  align-items: center;
+}
+.form-item.intro{
+  display: flex;
+  align-items: flex-start;
+}
+.item-title {
+  color:#858585;
+  padding-right:16rpx;
+}
+.item-context{
+  color:#404040;
+  width:540rpx;
+  line-height: 48rpx;
+}
+.item-context text{
+  color:#404040;
+  padding-left: 10rpx;
+}
+.item-context text:first-child{
+  padding-left: 0;
+}
+.btn-tag-frame{
+  padding: 8rpx 40rpx 188rpx;
+  background-color: #EDEDED;
+}
+.tag-frame {
+  display: flex;
+}
+.tag-title {
+  height: 34rpx;
+}
+.tag-container{
+  display: flex;
+  flex: 1;
+  flex-wrap:wrap;
+}
+.tag-item{
+  border-radius: 4rpx;
+  display: flex;
+  align-items: center;
+  height: 40rpx;
+  padding: 0 16rpx;
+  font-size: 24rpx;
+  margin-left: 16rpx;
+  background-color: #FFE3CE;
+  border:2rpx solid transparent;
+  color:#FF7000;
+}

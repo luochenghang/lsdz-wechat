@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "TA的礼物",
+  "usingComponents": {
+    "d-card": "/components/vertical-item/vertical-item",
+    "shop-search": "/components/searchbar/searchbar"
+  }
+}

@@ -1,0 +1,31 @@
+<view class="search">
+  <view class="input-box">
+    <image class="search-icon" src="/images/home-icon-search.svg"></image>
+    <input class="search-input" confirm-type="search" placeholder="请输入好友昵称或者真实姓名进行查找" placeholder-class="placeholder" bindconfirm="search"></input>
+  </view>
+</view>
+<view class="test" wx:if="{{list.length}}">
+
+
+  <view class="item" wx:for="{{list}}" wx:key="{{this}}" data-item="{{item}}" data-id="{{item.id}}">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+          <image src="{{item.portrait}}" style="width: 50px; height: 50px; display: block" />
+
+        </view>
+        <view class="weui-cell__bd">
+          <view style="text-align: left;">{{item.nickName}}</view>
+          <view style="font-size: 13px;color: #888888;">{{item.levelName}} {{item.victoryPoint}}胜点</view>
+        </view>
+        <view class="friendEdit">
+          <view class="friendagree" bindtap="_addFrined" data-id="{{item.id}}">添加</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="no-merchant" wx:else>{{loadingTips}}</view>

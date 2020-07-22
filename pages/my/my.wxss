@@ -1,0 +1,75 @@
+.weui-cell {
+  background-color: #fff;
+}
+
+.placeholder {
+  text-align: center;
+}
+
+.weui-cells__title {
+  margin-top: 40px;
+}
+
+.kind-list__item {
+  margin: 0;
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.kind-list__item:first-child {
+  margin-top: 0;
+}
+
+.kind-list__img {
+  width: 30px;
+  height: 30px;
+}
+
+.kind-list__item-hd {
+  padding: 15px;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  margin-bottom: 1px;
+  background-color: #f7f7f7;
+}
+
+.kind-list__item-hd_show {
+  opacity: 0.4;
+}
+
+.kind-list__item-bd {
+  height: 0;
+  overflow: hidden;
+}
+
+.kind-list__item-bd_show {
+  height: auto;
+}
+
+.friendEdit {
+  width: 200px;
+}
+
+.friendagree {
+  font-size: 13px;
+  color: #fff;
+  float: right;
+  margin-left: 10px;
+  background-color: green;
+  padding: 10px;
+}
+
+.friendreject {
+  font-size: 13px;
+  color: #fff;
+  float: right;
+  
+  background-color: #fe3b30;
+  padding: 10px;
+}
+
+.weui-cell_access-height {
+  height: 50px;
+  border-bottom: 1px solid #888888;
+}

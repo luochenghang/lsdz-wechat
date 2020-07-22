@@ -1,0 +1,59 @@
+<view class="page">
+  <view class="page__bd">
+      <view style=" width: 100%;">
+
+    <image mode="aspectFill" src="../../images/add.png" role="img" style=" width: 100%;"></image>
+  </view>
+    <view class="weui-cells__title"></view>
+
+    
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="/pages/addTask/addTask?isForMe=0" class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">
+            <image src="../../images/add_icon.svg" style="width: 30px; height: 15px;" />给TA布置任务</view>
+            <view class="weui-badge" style="margin-left: 5px;">8</view>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0"></view>
+      </navigator>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="/pages/addGift/addGift?isForMe=0"  class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">
+            <image src="../../images/add_icon.svg" style="width: 30px; height: 15px;" />给TA设计礼物</view>
+            <view class="weui-badge" style="margin-left: 5px;">8</view>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0"></view>
+      </navigator>
+    </view>
+
+    <view class="weui-cells__title"></view>
+   
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="/pages/addTask/addTask?isForMe=1"  class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">
+            <image src="../../images/add_icon.svg" style="width: 30px; height: 15px;" />给我添加任务</view>
+            <view class="weui-badge" style="margin-left: 5px;">8</view>
+          </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+        </view>
+      </navigator>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="/pages/addGift/addGift?isForMe=1" class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">
+            <image src="../../images/add_icon.svg" style="width: 30px; height: 15px;" />给我设计礼物</view>
+            <view class="weui-badge" style="margin-left: 5px;">8</view>
+          </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+        </view>
+      </navigator>
+    </view>
+    
+    
+
+  </view>
+</view>

@@ -1,0 +1,13 @@
+.test{
+    width: 750rpx;
+    
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    margin-top: 20rpx;
+    margin-left: 16.6rpx;
+    border-bottom: 1px solid #DDDDDD;
+}

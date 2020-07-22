@@ -1,0 +1,8 @@
+<!--components/navbar/index.wxml-->
+<view class="navbar" style="{{'height:' + navigationBarHeight}}">
+  <view style="{{'height:' + statusBarHeight}}"></view>
+  <view class="title-container">
+    <view class="capsule" wx:if="{{hasback}}" bindtap="_goBack">返回{{hasback}}</view>
+    <view class="title">{{title}}</view>
+  </view>
+</view>

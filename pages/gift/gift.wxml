@@ -1,0 +1,17 @@
+<view class="search">
+  <view class="input-box">
+    <image class="search-icon" src="/images/home-icon-search.svg"></image>
+    <input class="search-input" confirm-type="search" placeholder="请输入礼物名称或者内容查找" placeholder-class="placeholder" bindconfirm="search"></input>
+  </view>
+</view>
+<view class="test"  wx:if="{{list.length}}">
+
+
+    <view class="item" wx:for="{{list}}" wx:key="{{this}}" data-item="{{item}}" data-id="{{item.id}}" bindtap="_toDetailGift">
+      <d-card title="{{item.title}}" price="{{item.coins}}" priseNum="{{item.priseNum}}" thumb="{{item.coverImg}}" id="{{item.id}}">
+      </d-card>
+    </view>
+
+</view>
+
+<view class="no-merchant" wx:else>{{loadingTips}}</view>

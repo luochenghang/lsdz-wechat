@@ -1,0 +1,15 @@
+<view class="d-class d-shoping-item" >
+  <image src="{{thumb}}" class="d-shoping-image" />
+  <view class="info" wx:if="{{title||price||priseNum}}">
+    <view class="desc" wx:if="{{title}}">
+      {{title}}{{id}}
+    </view>
+    <view class="detail">
+      <view class="price">
+        <image src="/images/coins.svg" style="width:20px; height:20px;"></image>
+        <view style="position: absolute; left: 22px; top: 2px; ">{{price}}</view>
+      </view>
+      <view class="sale">喜爱数:{{priseNum}}</view>
+    </view>
+  </view>
+</view>

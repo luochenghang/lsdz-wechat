@@ -1,0 +1,39 @@
+<view class="container">
+
+
+  <view style=" width: 100%;">
+
+    <image mode="aspectFill" src="{{form.coverImg}}" role="img" style=" width: 100%;"></image>
+  </view>
+
+
+  <view class="shop">
+    <view class="shop-title">
+      <view class="score"><image src="/images/coins.svg" style="width:20px; height:20px;"></image>{{form.coins}}</view>
+      <view class="like">
+        <image mode="aspectFill" src="../../images/like.svg" style="width: 20px; height: 16px;"></image> {{form.priseNum}}人</view>
+    </view>
+  </view>
+
+  <view class="weui-article">
+    <view class="weui-article__h1">{{form.title}}</view>
+    <view class="weui-article__section">
+      <view class="weui-article__p">
+        {{form.content}}
+      </view>
+    </view>
+
+  </view>
+  
+
+ <view class="coustom">
+  
+ </view> 
+
+</view>
+
+
+<view class="foot">
+    <button class="contact-btn" open-type="contact">联系客服</button>
+    <button class="pay" hover-class="pay-hover" bindtap="payBill">立即买单</button>
+  </view>

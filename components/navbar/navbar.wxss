@@ -1,0 +1,35 @@
+/* components/navbar.wxss */
+
+.navbar {
+  width: 100vw;
+  z-index: 1;
+}
+
+.title-container {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.capsule {
+  margin-left: 10px;
+  border: 1rpx solid rgba(229, 229, 229, 0.5);
+  height: 32px;
+  line-height: 32px;
+  width: 40px;
+  font-size: 14px;
+}
+
+.title {
+  color: #000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  width: 300rpx;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

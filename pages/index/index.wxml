@@ -1,0 +1,4 @@
+
+  <view class="intro-container">
+    <button class="btn btn-business" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">立即申请</button>
+  </view>

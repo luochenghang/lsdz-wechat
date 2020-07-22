@@ -1,0 +1,104 @@
+<view class="page">
+
+
+  <view class="page__bd">
+
+
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+          <image src="../../images/default.svg" style="width: 50px; height: 50px; display: block" />
+
+        </view>
+        <view class="weui-cell__bd">
+          <view>罗**</view>
+
+          <view style="font-size: 13px;color: #888888;" class="weui-media-box__info__meta ">金币:10000</view>
+          <view style="font-size: 13px;color: #888888;" class="weui-media-box__info__meta weui-media-box__info__meta_extra">
+            段位:砖石</view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-cells__title"></view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">
+            <image src="../../images/task.svg" style="width: 30px; height: 15px;" />审核任务</view>
+         
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+        </view>
+      </view>
+    </view>
+
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">
+            <image src="../../images/audit.svg" style="width: 30px; height: 15px;" />审核礼物</view>
+         
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">
+            <image src="../../images/task.svg" style="width: 30px; height: 15px;" />我的任务列表</view>
+         
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+        </view>
+      </view>
+    </view>
+
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">
+            <image src="../../images/audit.svg" style="width: 30px; height: 15px;" />我的审核列表</view>
+         
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title"></view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">
+            <image src="../../images/record.svg" style="width: 30px; height: 15px;" />TA的兑换记录</view>
+         
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">
+            <image src="../../images/record.svg" style="width: 30px; height: 15px;" />我的兑换记录</view>
+         
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+
+</view>

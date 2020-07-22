@@ -1,0 +1,91 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__bd">
+
+    <view class="task_title"  wx:if="{{forMeToDo}}">为我设计任务</view>
+    <view class="task_title"  wx:else >为TA设计任务</view>
+    <view class="weui-cells weui-cells_after-title">
+
+      <view class="weui-cell weui-cell_select task_type">
+        <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label">紧急程度</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker bindchange="bindlevel" value="{{form.level}}" range="{{levelStr}}">
+            <view class="weui-select weui-select_in-select-after">{{levelStr[form.level]}}</view>
+          </picker>
+        </view>
+      </view>
+
+     
+      <view class="weui-cell ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">任务标题</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入任务标题"  value="{{form.title}}" bindinput="bindtitle" />
+        </view>
+      </view>
+       <view class="weui-cell ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">任务内容</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入任务内容" value="{{form.content}}" bindinput="bindcontent" />
+        </view>
+      </view>
+
+       <view class="weui-cell ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">截止时间</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{form.endDate}}" start="{{form.endDate}}" end="" bindchange="bindendDate">
+            <view class="weui-input weui-select_in-select-after">{{form.endDate}}</view>
+          </picker>
+        </view>
+      </view>
+
+       <view class="weui-cell ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">获得金币</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="完成获得金币数量" value="{{form.rewardCoins}}" bindinput="bindrewardCoins" />
+        </view>
+      </view>
+
+      <view class="weui-cell ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">扣除金币</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="失败扣除金币数量" value="{{form.punishCoins}}" bindinput="bindpunishCoins" />
+        </view>
+      </view>
+
+      <view class="tech-img-frame">
+        <view class="tech-img-upload" wx:if="{{!form.coverImg}}" bindtap='chooseImage'>
+          <view>
+            <image class="bg-add-upload" src="/images/bg-add-upload.svg"></image>
+            <view class="tech-upload-tips">上传一张照片尺寸 315*330px</view>
+          </view>
+        </view>
+        <view class="tech-img-layer" wx:if="{{form.coverImg}}">
+          <view class="btn-upload" bindtap='chooseImage'>
+            <image class="icon-reset-upload" src="/images/icon-reset-upload.svg"></image>
+          </view>
+          <image class="tech-img" src="{{form.coverImg}}"></image>
+        </view>
+      </view>
+
+
+
+
+    </view>
+    <view class="weui-btn-area" style="margin: 20px 16px 8px">
+      <button class="weui-btn" type="primary" bindtap="onSubmit">确定</button>
+    </view>
+
+  </view>
+
+</view>

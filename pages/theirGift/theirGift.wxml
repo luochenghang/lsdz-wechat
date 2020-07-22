@@ -1,0 +1,34 @@
+<shop-search> </shop-search>
+
+<view class="test">
+    <view class="item">
+        <d-card
+                title="12018夏季女装碎花外穿雪纺衫吊带衫大妈无袖印花小背心说几句话收到货大幅度发"
+                price="69.9"
+                sale="销量 80"
+                thumb="http://img.weiye.me/zcimgdir/album/file_58fdb771ec8e8.png"
+                id:1
+        >
+        </d-card>
+    </view>
+    <view class="item">
+        <d-card
+                title="12018夏季女装"
+                price="69.9"
+                sale="200"
+                thumb="http://img.weiye.me/zcimgdir/album/file_58fdb771ec8e8.png"
+                id:2
+        >
+        </d-card>
+    </view>
+    <view class="item">
+        <d-card
+                title="12018夏季女装碎花外穿雪纺衫吊带衫大妈无袖印花小背心说几句坚阿萨德大幅度发"
+                price="69.9"
+                sale="销量 60"
+                thumb="http://img.weiye.me/zcimgdir/album/file_58fdb771ec8e8.png"
+                id:3
+        >
+        </d-card>
+    </view>
+</view>

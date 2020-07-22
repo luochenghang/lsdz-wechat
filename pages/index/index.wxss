@@ -1,0 +1,21 @@
+.intro-container {
+  width:100%;
+  height: 100%;
+  background: url('http://n.sinaimg.cn/transform/20150821/3aYB-fxhcvsc4248608.jpg') no-repeat;
+  background-size: 100% 1600rpx;
+  position: relative;
+}
+.btn-business {
+  position: absolute;
+  top:970rpx;
+  left:0;
+  right:0;
+  margin: auto;
+  width:560rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  background:linear-gradient(180deg,rgba(255,230,0,1) 0%,rgba(255,176,0,1) 100%);
+  border-radius:50rpx;
+  color:#fff;
+  font-size: 28rpx;
+}

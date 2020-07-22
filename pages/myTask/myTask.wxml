@@ -1,0 +1,97 @@
+<view class="container">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <view bindtap="tabClick" class="weui-navbar__item {{activeIndex == 0 ? 'weui-bar__item_on' : ''}}" id="0">
+          <view class="weui-navbar__title">未进行
+            <icon size="15" type="warn" role="img"></icon>
+          </view>
+        </view>
+        <view bindtap="tabClick" class="weui-navbar__item {{activeIndex == 1 ? 'weui-bar__item_on' : ''}}" id="1">
+          <view class="weui-navbar__title">进行中
+            <icon size="15" type="waiting" role="img"></icon>
+          </view>
+        </view>
+        <view bindtap="tabClick" class="weui-navbar__item {{activeIndex == 2 ? 'weui-bar__item_on' : ''}}" id="2">
+          <view class="weui-navbar__title">未完成
+            <icon size="15" type="cancel" role="img"></icon>
+          </view>
+        </view>
+        <view bindtap="tabClick" class="weui-navbar__item {{activeIndex == 3 ? 'weui-bar__item_on' : ''}}" id="3">
+          <view class="weui-navbar__title">已完成
+            <icon size="15" type="success" role="img"></icon>
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-tab__panel">
+
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+          <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_text">
+              <view class="weui-media-box__title weui-media-box__title_in-text">标题一</view>
+              <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+              <view class="weui-media-box__info">
+                <view class="weui-media-box__info__meta">文字来源</view>
+                <view class="weui-media-box__info__meta">时间</view>
+                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其它信息</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_text" bindtap="_toTaskDetail">
+              <view class="weui-media-box__title weui-media-box__title_in-text">标题一</view>
+              <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+              <view class="weui-media-box__info">
+                <view class="weui-media-box__info__meta ">进行中</view>
+                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">2019-12-15~2019-12-16</view>
+                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">+100分</view>
+                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">-10分</view>
+              </view>
+            </view>
+
+            <view class="weui-media-box weui-media-box_text">
+              <view class="weui-media-box__title weui-media-box__title_in-text">标题一</view>
+              <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+              <view class="weui-media-box__info">
+                <view class="weui-media-box__info__meta ">进行中</view>
+                <view class="weui-media-box__info__meta ">2019-12-15~2019-12-16</view>
+                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">+100分</view>
+                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">-10分</view>
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+          <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_text">
+              <view class="weui-media-box__title weui-media-box__title_in-text">标题一</view>
+              <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+              <view class="weui-media-box__info">
+                <view class="weui-media-box__info__meta">文字来源</view>
+                <view class="weui-media-box__info__meta">时间</view>
+                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其它信息</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 3}}">
+          <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_text">
+              <view class="weui-media-box__title weui-media-box__title_in-text">标题一</view>
+              <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+              <view class="weui-media-box__info">
+                <view class="weui-media-box__info__meta">文字来源</view>
+                <view class="weui-media-box__info__meta">时间</view>
+                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其它信息</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

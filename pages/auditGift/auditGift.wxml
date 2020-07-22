@@ -1,0 +1,38 @@
+<view class="container">
+
+
+  <view style=" width: 100%;">
+
+    <image mode="aspectFill" src="https://bpb-test.oss-cn-beijing.aliyuncs.com//orange_Img/2019/12/04/7d2748b7d3f049e2b1b6848a56cacd3d.png" role="img" style=" width: 100%;"></image>
+  </view>
+
+
+  <view class="form-frame">
+    <view class="form-item">
+      <view class="item-title">被审核人</view>
+      <view class="item-context">打卡何老师</view>
+    </view>
+    <view class="form-item">
+      <view class="item-title">礼物标题</view>
+      <view class="item-context">{{form.workTimeStr}}</view>
+    </view>
+    <view class="form-item">
+      <view class="item-title">所需金币</view>
+      <view class="item-context">{{form.workLevelStr}}</view>
+    </view>
+    
+    <view class="form-item intro">
+      <view class="item-title" style="line-height:48rpx;">礼物描述</view>
+      <view class="item-context">大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大叔大婶大</view>
+    </view>
+  </view>
+
+
+
+</view>
+
+
+<view class="foot">
+  <button class="contact-btn" open-type="contact">审核失败</button>
+  <button class="pay" hover-class="pay-hover" bindtap="payBill">审核通过</button>
+</view>
